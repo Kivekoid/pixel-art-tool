@@ -5,7 +5,6 @@ const resetBtn = document.querySelector('.btn')
 const gridborderrandomcolorBtn = document.querySelector('.btn2')
 const resetGridBorderColorBtn = document.querySelector('.btn3')
 const color = document.querySelector('.color')
-const color2 = document.querySelector('.color2')
 
 let draw = false
 
