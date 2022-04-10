@@ -1,23 +1,20 @@
 const container = document.querySelector('.container')
 const sizeElement = document.querySelector('.size')
-let size = sizeElement.value
 const resetBtn = document.querySelector('.btn')
 const gridborderrandomcolorBtn = document.querySelector('.btn2')
 const resetGridBorderColorBtn = document.querySelector('.btn3')
 const color = document.querySelector('.color')
 
+let size = sizeElement.value
 let draw = false
 
 function populate(size) {
 
   container.style.setProperty('--size', size)
-
   let i = 0
   while(i < size * size){
-
     const div = document.createElement('div')
     div.classList.add('pixel')
-
     div.addEventListener('mouseover', function(){
         if(!draw) return
         div.style.backgroundColor = color.value
@@ -25,14 +22,10 @@ function populate(size) {
     div.addEventListener('mousedown', function(){
         div.style.backgroundColor = color.value
     })
-
     container.appendChild(div)
     i++
   }
 }
-
-
-
 window.addEventListener("mousedown", function(){
     draw = true
 })
