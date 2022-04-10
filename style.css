@@ -8,6 +8,8 @@ body{
     align-items:center;
     justify-content:center;
     flex-direction:column;
+
+
 }
 .navbar, .container{
     background-color:rgb(20,20,20);
@@ -24,12 +26,15 @@ body{
 .btn,.btn2,.btn3,input{
     height:35px;
     padding : 0 1em;
+
 }
+
 .color{
     padding:0 .25em;
     width:100px;
     margin:0 1em;
 }
+
 .container{
     --size:4;
     height: 800px;
@@ -42,4 +47,5 @@ body{
 .pixel{
     background-color:#666;
     border-radius: 2px;
+    
 }

@@ -14,6 +14,7 @@ function populate(size) {
 
   let i = 0
   while(i < size * size){
+
     const div = document.createElement('div')
     div.classList.add('pixel')
 
@@ -29,6 +30,9 @@ function populate(size) {
     i++
   }
 }
+
+
+
 window.addEventListener("mousedown", function(){
     draw = true
 })
@@ -67,4 +71,5 @@ sizeElement.addEventListener('change', function(){
     size = sizeElement.value
     reset()
 })
+
 populate(size)
